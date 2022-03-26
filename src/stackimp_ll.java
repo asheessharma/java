@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class Node1{
     int data;
     Node1 next;
@@ -48,7 +47,6 @@ public class stackimp_ll {
             top=top.next;
         }
     }
-
     public static void main(String[] args) {
         stackimp_ll obj=new stackimp_ll();
         while(true){
