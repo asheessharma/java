@@ -1,10 +1,10 @@
 import java.util.Scanner;
-class node{
+class node0 {
     int data;
-    node next;
+    node0 next;
 }
 public class singlylinklist {
-    node START;
+    node0 START;
     singlylinklist(){
         START=null;
     }
@@ -12,14 +12,14 @@ public class singlylinklist {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your rollno :");
         int data = sc.nextInt();
-        node nn = new node();
+        node0 nn = new node0();
         nn.data = data;
         nn.next = null;
 
         if (START == null) {
             START = nn;
         } else {
-            node current = START;
+            node0 current = START;
             while (current.next != null) {
                 current = current.next;
             }
@@ -57,7 +57,7 @@ public class singlylinklist {
         }
         else{
             System.out.println("-------list elements-------");
-            node current;
+            node0 current;
             for(current=START;current!=null;current=current.next){
                 System.out.println(" "+current.data);
             }

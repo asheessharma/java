@@ -1,17 +1,17 @@
 import java.util.Scanner;
-class node2{
+class Node_2 {
     int data;
-    node2 next;
-    node2 previous;
+    Node_2 next;
+    Node_2 previous;
 }
 public class doublylinkedlist {
-    node2 head;
+    Node_2 head;
     doublylinkedlist(){
         head=null;
     }
     void insert(){
         Scanner sc=new Scanner(System.in);
-        node2 node=new node2();
+        Node_2 node=new Node_2();
         System.out.print("enter the data:");
         int data=sc.nextInt();
         node.data=data;
@@ -23,7 +23,7 @@ public class doublylinkedlist {
             head=node;
         }
         else{
-            node2 current=head;
+            Node_2 current=head;
             while(current.next!=null){
                 current=current.next;
             }
@@ -37,7 +37,7 @@ public class doublylinkedlist {
             System.out.println("list is empty...");
         }
         else{
-            node2 current;
+            Node_2 current;
             for(current=head;current!=null;current=current.next){
                 System.out.print(" "+ current.data);
             }
