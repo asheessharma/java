@@ -1,21 +1,21 @@
 import java.util.Scanner;
-public class insertionsort {
+public class insertion_sort_1 {
     static void print(int []arr){
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]+" ");
         }
     }
     static void solution(int [] arr){
-        int j,temp=0;
+        int j,temp_1=0;
         int n=arr.length;
         for(int i=1;i<n;i++){
-            temp=arr[i];
+            temp_1=arr[i];
             j=i;
-            while(j>0 && arr[j-1]>temp){
+            while(j>0 && arr[j-1]>temp_1){
                 arr[j]=arr[j-1];
                 j=j-1;
             }
-            arr[j]=temp;
+            arr[j]=temp_1;
         }
     }
 
