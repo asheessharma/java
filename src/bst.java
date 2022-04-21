@@ -1,5 +1,5 @@
 class nodd {
-    nodd left,right;
+    noddle left,right;
     int key;
     public nodd(int item){
         key=item;
@@ -7,12 +7,12 @@ class nodd {
     }
 }
 public class bst {
-    nodd root;
+    noddle root;
     bst(){
         root=null;
     }
 
-    public nodd small(nodd n){
+    public noddle small(noddle n){
         if(n.left.left==null)
             return n;
        n= small(n.left);
@@ -20,13 +20,13 @@ public class bst {
     }
     public static void main(String[] args) {
         bst tree=new bst();
-        tree.root=new nodd(6);
-        tree.root.left=new nodd(4);
-        tree.root.right=new nodd(8);
-        tree.root.left.left=new nodd(3);
-        tree.root.left.right=new nodd(5);
-        tree.root.right.left=new nodd(7);
-        tree.root.right.right=new nodd(9);
+        tree.root=new noddle(6);
+        tree.root.left=new noddle(4);
+        tree.root.right=new noddle(8);
+        tree.root.left.left=new noddle(3);
+        tree.root.left.right=new noddle(5);
+        tree.root.right.left=new noddle(7);
+        tree.root.right.right=new noddle(9);
         System.out.println(tree.small(tree.root).key);
 
 
