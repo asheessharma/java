@@ -1,5 +1,5 @@
 class node_0 {
-    nodd left,right;
+    noddle left,right;
     int key;
     public node_0(int item){
         key=item;
@@ -7,11 +7,11 @@ class node_0 {
     }
 }
 public class Binarytree {
-    nodd root;
+    noddle root;
     Binarytree(){
         root=null;
     }
-    void preorder(nodd node){
+    void preorder(noddle node){
         if(node==null){
             return;
         }
@@ -19,14 +19,14 @@ public class Binarytree {
         preorder(node.left);
         preorder(node.right);
     }
-    void inorder(nodd node){
+    void inorder(noddle node){
         if(node==null)
             return;
         inorder(node.left);
         System.out.print(node.key+" ");
         inorder(node.right);
     }
-    void postorder(nodd node){
+    void postorder(noddle node){
         if(node==null){
             return;
         }
@@ -37,11 +37,11 @@ public class Binarytree {
 
     public static void main(String[] args) {
         Binarytree tree= new Binarytree();
-        tree.root=new nodd(1);
-        tree.root.left=new nodd(2);
-        tree.root.right=new nodd(3);
-        tree.root.left.left=new nodd(4);
-        tree.root.left.right=new nodd(5);
+        tree.root=new noddle(1);
+        tree.root.left=new noddle(2);
+        tree.root.right=new noddle(3);
+        tree.root.left.left=new noddle(4);
+        tree.root.left.right=new noddle(5);
         System.out.println("**** PREORDER TRAVERSAL ****");
         tree.preorder(tree.root);
         System.out.println("\n**** INORDER TRAVERSAL ****");
