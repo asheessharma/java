@@ -30,8 +30,8 @@ public class Binarytree {
         if(node==null){
             return;
         }
-        preorder(node.left);
-        preorder(node.right);
+        postorder(node.left);
+        postorder(node.right);
         System.out.print(node.key+" ");
     }
 

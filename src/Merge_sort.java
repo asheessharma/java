@@ -21,7 +21,6 @@ public class Merge_sort {
             devide(mid+1,h);
             merge(l,mid,h);
         }
-
     }
     public void merge(int l,int mid,int h){
         for(int i=l;i<=h;i++){
